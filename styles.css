@@ -1,0 +1,144 @@
+.bio{
+    height: 300px;
+    width: 500px;
+}
+.Me {
+    border-radius: 12px;
+    height: 250px;
+    width: 400px;
+    border: 1px solid black;
+    text-align: left;
+    padding: 17px;
+    font-size: 17px;
+    background: linear-gradient(135deg, #ff00c9, #47b8e0, #ffae00);
+  }
+.circle {
+  margin-left: 10rem;
+  margin-top: 3rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff00c9, #47b8e0, #ffae00);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes moveAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.icon-container {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 50%;
+  animation: rotateAnimation 5s infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 90%;
+  background-color: transparent;
+  position: absolute;
+  top: calc(80% - 65px);
+  left: calc(50% - 20px);
+  margin: 1px;
+}
+
+.icon:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.icon1 {
+  align-items: center;
+  justify-content: center;
+
+  transform: rotate(0deg) translateX(100px) rotate(90deg);
+}
+
+.icon2 {
+  transform: rotate(36deg) translateX(100px) rotate(90deg);
+}
+
+.icon3 {
+  transform: rotate(72deg) translateX(100px) rotate(90deg);
+}
+
+.icon4 {
+  transform: rotate(108deg) translateX(100px) rotate(90deg);
+}
+
+.icon5 {
+  transform: rotate(144deg) translateX(100px) rotate(90deg);
+}
+
+.icon6 {
+  transform: rotate(180deg) translateX(100px) rotate(90deg);
+}
+
+.icon7 {
+  transform: rotate(216deg) translateX(100px) rotate(90deg);
+}
+
+.icon8 {
+  transform: rotate(252deg) translateX(100px) rotate(90deg);
+}
+
+.icon9 {
+  transform: rotate(288deg) translateX(100px) rotate(90deg);
+}
+
+.icon10 {
+  transform: rotate(324deg) translateX(100px) rotate(90deg);
+}
